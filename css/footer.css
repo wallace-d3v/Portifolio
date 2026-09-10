@@ -1,0 +1,22 @@
+/* ============================= */
+/* RODAPÉ */
+/* ============================= */
+
+.rodape {
+  padding: 26px 0;
+
+  background: rgba(5, 3, 10, 0.95);
+  border-top: 1px solid rgba(178, 107, 255, 0.12);
+}
+
+.rodape__conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.rodape p {
+  color: var(--cor-texto-fraca);
+  font-size: 0.9rem;
+}

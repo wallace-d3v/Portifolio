@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wallace | Desenvolvedor em Formação</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="container cabecalho__conteudo">
+
+            <a href="#" class="logo">
+                Wallace<span>.</span>
+            </a>
+
+            <nav class="menu" id="menu">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#portfolio">Portfólio</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <button class="botao-menu" id="botao-menu" aria-label="Abrir menu" type="button">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="hero">
+            <div class="container hero__conteudo">
+
+                <div class="hero__texto">
+
+                    <h1>Wallace<span>.</span></h1>
+
+                    <h2>
+                        Desenvolvedor
+                        <strong>backend</strong> 
+                    </h2>
+
+                    <p class="hero__descricao">
+                        Estudante de Sistemas de Informação buscando oportunidade de estágio
+                        ou vaga júnior para aplicar conhecimentos em projetos reais e continuar
+                        evoluindo como desenvolvedor.
+                    </p>
+
+                    <div class="hero__botoes">
+                        <a href="assets/curriculo/curriculo-wallace.pdf" class="botao botao--principal" download>
+                            Baixar currículo
+                        </a>
+
+                        <a href="#portfolio" class="botao botao--secundario">
+                            Ver projetos
+                        </a>
+
+                        <a href="#" class="botao botao--secundario">
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero__imagem">
+                    <div class="card-codigo">
+                        <pre>
+const dev = {
+  nome: "Wallace",
+  foco: "Backend",
+  skills: [
+    "Nest.Js",
+    "React",
+    "JavaScript",
+    "SQL",
+    "Kotlin"
+  ]
+};
+        </pre>
+                    </div>
+
+                    <img src="assets/img/perfil.png" alt="">
+                </div>
+
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div class="container sobre__conteudo">
+
+                <div class="sobre__texto">
+                    <p class="tag">Sobre mim</p>
+
+                    <h2>
+                        Desenvolvedor 
+                        <span>backend & Mobile</span>.
+                    </h2>
+
+                    <p>
+                        Sou estudante de Sistemas de Informação e estou construindo minha base
+                        como desenvolvedor com foco em backend, APIs REST e Desenvolvimento Mobile.
+                    </p>
+
+
+                    <p>
+                       Busco uma oportunidade de estágio ou como desenvolvedor júnior para evoluir ao lado de uma equipe técnica, ampliar minha experiência e contribuir no desenvolvimento de soluções que gerem valor para empresas e usuários.
+                    </p>
+
+                    <div class="sobre__destaques">
+                        <div class="sobre__destaque">
+                            <strong>02+</strong>
+                            <span>Ano de estudo prático</span>
+                        </div>
+
+                        <div class="sobre__destaque">
+                            <strong>04+</strong>
+                            <span>Projetos em desenvolvimento</span>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="sobre__info">
+                    <h3>Informações</h3>
+
+                    <div class="sobre__info-lista">
+                        <div class="sobre__info-item">
+                            <strong>Nome</strong>
+                            <span>Wallace Monsores</span>
+                        </div>
+
+                        <div class="sobre__info-item">
+                            <strong>Formação</strong>
+                            <span>Sistemas de Informação</span>
+                        </div>
+
+                        <div class="sobre__info-item">
+                            <strong>Objetivo</strong>
+                            <span>Estágio ou vaga júnior</span>
+                        </div>
+
+                        <div class="sobre__info-item">
+                            <strong>Foco técnico</strong>
+                            <span>Backend, APIs REST e Apps Mobile</span>
+                        </div>
+
+                        <div class="sobre__info-item">
+                            <strong>Localização</strong>
+                            <span>Brasil</span>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+
+                <div class="secao-titulo">
+                    <p class="tag">Meu portfólio</p>
+                    <h2>Projetos, certificados e stack tecnológica</h2>
+                </div>
+
+                <div class="portfolio__abas">
+                    <button class="aba ativa" data-aba="projetos">Projetos</button>
+                    <button class="aba" data-aba="certificados">Certificados</button>
+                    <button class="aba" data-aba="stack">Stack</button>
+                </div>
+
+                <!-- PROJETOS -->
+                <div class="portfolio__conteudo ativo" id="projetos">
+                    <div class="projetos-grid">
+
+                        <!--App Checklist -->
+                        <article class="projeto-card">
+                            <div class="projeto-card__imagem">
+                                <img src="assets/img/projetos/checklist.png" alt="Sistema de checklist ">
+                            </div>
+
+                            <div class="projeto-card__conteudo">
+                                <h3>App Checklist </h3>
+
+                                <p>
+                                    Sistema para gerenciamento e execução de checklists, com múltiplas lojas, funcionários, cargos, turnos, evidências fotográficas e painel administrativo responsivo.
+                                </p>
+
+                                <div class="projeto-card__tecnologias">
+                                    <span>React</span>
+                                    <span>Vite</span>
+                                    <span>TypeScript</span>
+                                    <span>NestJS</span>
+                                    <span>Prisma</span>
+                                    <span>PostgreSQL</span>
+                                    <span>Supabase </span>
+                                </div>
+
+                                <div class="projeto-card__botoes">
+                                    <a href="#" target="_blank">Ver projeto</a>
+                                    <a href="#" target="_blank">GitHub</a>
+                                </div>
+                            </div>
+
+                            <!--Catalogo de Produtos-->
+                            
+                        </article>
+
+                        <!--Catalogo de Produtos-->
+                        <article class="projeto-card">
+                            <div class="projeto-card__imagem">
+                                <img src="assets/img/projetos/checklist.png" alt="Catalogo de Produtos">
+                            </div>
+
+                            <div class="projeto-card__conteudo">
+                                <h3>Catalogo de Produtos</h3>
+
+                                <p>
+                                    ....
+                                </p>
+
+                                <div class="projeto-card__tecnologias">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="projeto-card__botoes">
+                                    <a href="#" target="_blank">Ver projeto</a>
+                                    <a href="#" target="_blank">GitHub</a>
+                                </div>
+                            </div>
+
+                            <!--Catalogo de Produtos-->
+                            
+                        </article>
+                    </div>
+                </div>
+
+                <!-- CERTIFICADOS -->
+                <div class="portfolio__conteudo" id="certificados">
+                    <div class="certificados-grid">
+
+                        <article class="certificado-card">
+                            <img src="assets/img/certificados/certificado-1.png" alt="Certificado de programação">
+
+                            <div class="certificado-card__conteudo">
+                                <h3>Curso técnico de TI - Faetec</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- STACK -->
+                <div class="portfolio__conteudo" id="stack">
+                    <div class="stack-blocos">
+
+                        <article class="stack-bloco">
+                            <h3>Frontend</h3>
+
+                            <div class="stack-itens">
+                                <div class="stack-item">
+                                    <img src="assets/img/tecnologias/html-5.png" alt="HTML">
+                                    <span>HTML</span>
+                                </div>
+
+                                <div class="stack-item">
+                                    <img src="assets/img/tecnologias/css-3.png" alt="CSS">
+                                    <span>CSS</span>
+                                </div>
+
+                                <div class="stack-item">
+                                    <img src="assets/img/tecnologias/javaScript.png" alt="JavaScript">
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="stack-bloco">
+                            <h3>Backend</h3>
+
+                            <div class="stack-itens">
+                                <div class="stack-item">
+                                    <img src="assets/img/tecnologias/node_js.png" alt="Node.js">
+                                    <span>Node.js</span>
+                                </div>
+
+                                <div class="stack-item">
+                                    <img src="assets/img/tecnologias/postgre.png" alt="PostgreSQL">
+                                    <span>PostgreSQL</span>
+                                </div>
+
+                                <div class="stack-item">
+                                    <img src="assets/img/tecnologias/python.png" alt="Python">
+                                    <span>Python</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="stack-bloco">
+                            <h3>Mobile e ferramentas</h3>
+
+                            <div class="stack-itens">
+                                <div class="stack-item">
+                                    <img src="assets/img/tecnologias/kotlin.png" alt="Kotlin">
+                                    <span>Kotlin</span>
+                                </div>
+
+                                <div class="stack-item">
+                                    <img src="assets/img/tecnologias/github.png" alt="GitHub">
+                                    <span>GitHub</span>
+                                </div>
+
+                                <div class="stack-item">
+                                    <img src="assets/img/tecnologias/linux.png" alt="Linux">
+                                    <span>Linux</span>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <div class="container contato__conteudo">
+
+                <div class="contato__info">
+                    <p class="tag">Contato</p>
+
+                    <h2>Vamos conversar?</h2>
+
+                    <p>
+                        Estou em busca de oportunidades de estágio, vaga júnior
+
+                    </p>
+
+                    <div class="contato__cards">
+                        <div class="contato__card">
+                            <strong>E-mail</strong>
+                            <span>wallace.monsores.rj@gmail.com</span>
+                        </div>
+                        <!--    
+            <div class="contato__card">
+              <strong>LinkedIn</strong>
+              <span>linkedin.com/in/seu-perfil</span>
+            </div>
+            -->
+
+                        <div class="contato__card">
+                            <strong>GitHub</strong>
+                            <span><a href="https://github.com/wallace-d3v">wallace.d3v</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="formulario-contato" action="https://formsubmit.co/wallace.monsores.rj@gmail.com"
+                    method="POST">
+
+                    <input type="hidden" name="_subject" value="Nova mensagem pelo portfólio">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <h3>Envie uma mensagem</h3>
+
+                    <div class="campo">
+                        <input type="text" name="nome" placeholder="Seu nome" aria-label="Seu nome" autocomplete="name" required>
+                    </div>
+
+                    <div class="campo">
+                        <input type="email" name="email" placeholder="Seu e-mail" aria-label="Seu e-mail" autocomplete="email" required>
+                    </div>
+
+                    <div class="campo">
+                        <textarea name="mensagem" placeholder="Sua mensagem" aria-label="Sua mensagem" required></textarea>
+                    </div>
+
+                    <button type="submit" class="botao botao--principal">
+                        Enviar mensagem
+                    </button>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape__conteudo">
+            <p>© 2026 Wallace.DEV. Todos os direitos reservados.</p>
+            <p>Feito com código.</p>
+        </div>
+    </footer>
+
+    <script src="js/menu-mobile.js"></script>
+    <script src="js/abas-portfolio.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

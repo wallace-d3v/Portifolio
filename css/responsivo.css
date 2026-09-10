@@ -1,0 +1,310 @@
+/* ============================= */
+/* TABLET E TELAS MÉDIAS */
+/* ============================= */
+
+@media (max-width: 980px) {
+  .hero__conteudo,
+  .sobre__conteudo,
+  .contato__conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 90px;
+  }
+
+  .hero__texto {
+    text-align: center;
+  }
+
+  .hero__descricao {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__botoes {
+    justify-content: center;
+  }
+
+  .hero__imagem {
+    min-height: 470px;
+  }
+
+  .card-codigo {
+    left: 50%;
+    transform: translateX(-65%);
+  }
+
+  .projetos-grid,
+  .certificados-grid,
+  .stack-blocos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sobre__destaques {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ============================= */
+/* CELULAR */
+/* ============================= */
+
+@media (max-width: 768px) {
+  section {
+    padding: 54px 0;
+  }
+
+  .container {
+    padding: 0 18px;
+  }
+
+  /* ============================= */
+  /* HEADER MOBILE */
+  /* ============================= */
+
+  .cabecalho {
+    height: 68px;
+  }
+
+  .botao-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu {
+    width: calc(100% - 36px);
+
+    position: absolute;
+    top: 78px;
+    left: 18px;
+
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+
+    padding: 12px;
+
+    background: rgba(18, 11, 32, 0.98);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio-medio);
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  }
+
+  .menu.menu--aberto {
+    display: flex;
+  }
+
+  .menu a {
+    padding: 14px 12px;
+    border-radius: var(--raio-pequeno);
+  }
+
+  .menu a:hover {
+    background: rgba(139, 61, 255, 0.12);
+  }
+
+  .menu a::after {
+    display: none;
+  }
+
+  /* ============================= */
+  /* HERO MOBILE */
+  /* ============================= */
+
+  .hero {
+    padding-top: 76px;
+  }
+
+  .hero__conteudo {
+    gap: 34px;
+  }
+
+  .hero__texto h1 {
+    letter-spacing: -2px;
+  }
+
+  .hero__texto h2 {
+    font-size: 1.35rem;
+  }
+
+  .hero__descricao {
+    font-size: 0.98rem;
+  }
+
+  .hero__botoes {
+    flex-direction: column;
+  }
+
+  .hero__botoes .botao {
+    width: 100%;
+  }
+
+  .hero__imagem {
+    min-height: 410px;
+    align-items: flex-end;
+  }
+
+  .hero__imagem::before {
+    width: 280px;
+    height: 280px;
+    right: 50%;
+    bottom: 30px;
+    transform: translateX(50%);
+  }
+
+  .hero__imagem::after {
+    width: 90px;
+    height: 90px;
+    right: 12px;
+    top: 36px;
+    background-size: 20px 20px;
+  }
+
+  .card-codigo {
+    width: 280px;
+    min-height: 230px;
+
+    left: 50%;
+    top: 35px;
+    transform: translateX(-58%);
+
+    padding: 22px;
+  }
+
+  .card-codigo pre {
+    font-size: 0.78rem;
+    line-height: 1.55;
+  }
+
+  .hero__imagem img {
+    width: min(320px, 92%);
+  }
+
+  /* ============================= */
+  /* SOBRE MOBILE */
+  /* ============================= */
+
+  .sobre__texto,
+  .sobre__info,
+  .contato__info,
+  .formulario-contato {
+    padding: 26px;
+  }
+
+  .sobre__destaques {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre__destaque strong {
+    font-size: 1.2rem;
+  }
+
+  /* ============================= */
+  /* PORTFÓLIO MOBILE */
+  /* ============================= */
+
+  .secao-titulo h2 {
+    font-size: 1.65rem;
+  }
+
+  .portfolio__abas {
+    width: 100%;
+    overflow-x: auto;
+    justify-content: flex-start;
+
+    border-radius: var(--raio-medio);
+  }
+
+  .aba {
+    min-width: max-content;
+    padding: 11px 18px;
+  }
+
+  .projetos-grid,
+  .certificados-grid,
+  .stack-blocos {
+    grid-template-columns: 1fr;
+  }
+
+  .projeto-card__imagem {
+    height: 180px;
+  }
+
+  .certificado-card img {
+    height: 190px;
+  }
+
+  .stack-itens {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* ============================= */
+  /* CONTATO MOBILE */
+  /* ============================= */
+
+  .contato__info h2 {
+    font-size: 1.8rem;
+  }
+
+  .campo textarea {
+    min-height: 150px;
+  }
+
+  /* ============================= */
+  /* RODAPÉ MOBILE */
+  /* ============================= */
+
+  .rodape__conteudo {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ============================= */
+/* CELULARES PEQUENOS */
+/* ============================= */
+
+@media (max-width: 430px) {
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  .hero__texto h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero__texto h2 {
+    font-size: 1.18rem;
+  }
+
+  .hero__imagem {
+    min-height: 360px;
+  }
+
+  .card-codigo {
+    width: 250px;
+    min-height: 210px;
+    transform: translateX(-54%);
+  }
+
+  .card-codigo pre {
+    font-size: 0.7rem;
+  }
+
+  .hero__imagem img {
+    width: min(280px, 94%);
+  }
+
+  .projeto-card__botoes {
+    flex-direction: column;
+  }
+
+  .stack-itens {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,100 @@
+/* ============================= */
+/* CABEÇALHO */
+/* ============================= */
+
+.cabecalho {
+  width: 100%;
+  height: 72px;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  background: rgba(5, 3, 10, 0.85);
+  backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid rgba(178, 107, 255, 0.12);
+}
+
+/* ============================= */
+/* CONTEÚDO DO CABEÇALHO */
+/* ============================= */
+
+.cabecalho__conteudo {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ============================= */
+/* LOGO */
+/* ============================= */
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--cor-texto);
+}
+
+.logo span {
+  color: var(--cor-roxa-clara);
+  font-size: 0.95rem;
+}
+
+/* ============================= */
+/* MENU */
+/* ============================= */
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.menu a {
+  color: var(--cor-texto-suave);
+  font-size: 0.95rem;
+  position: relative;
+  transition: 0.2s ease;
+}
+
+.menu a:hover {
+  color: var(--cor-texto);
+}
+
+.menu a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+
+  background: var(--cor-roxa-clara);
+  transition: 0.2s ease;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* ============================= */
+/* BOTÃO MENU MOBILE */
+/* ============================= */
+
+.botao-menu {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  color: var(--cor-texto);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-pequeno);
+
+  font-size: 1.5rem;
+}

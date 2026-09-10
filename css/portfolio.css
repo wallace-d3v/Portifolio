@@ -1,0 +1,270 @@
+/* ============================= */
+/* PORTFÓLIO */
+/* ============================= */
+
+.portfolio {
+  background:
+    radial-gradient(circle at center, rgba(139, 61, 255, 0.08), transparent 45%);
+}
+
+/* ============================= */
+/* ABAS */
+/* ============================= */
+
+.portfolio__abas {
+  width: fit-content;
+  margin: 0 auto 36px;
+  padding: 8px;
+
+  display: flex;
+  gap: 8px;
+
+  background: rgba(18, 11, 32, 0.75);
+  border: 1px solid var(--cor-borda);
+  border-radius: 999px;
+}
+
+.aba {
+  min-width: 120px;
+  padding: 12px 22px;
+
+  color: var(--cor-texto-suave);
+  background: transparent;
+  border-radius: 999px;
+
+  font-size: 0.95rem;
+  font-weight: 700;
+
+  transition: 0.2s ease;
+}
+
+.aba:hover {
+  color: var(--cor-texto);
+  background: rgba(139, 61, 255, 0.12);
+}
+
+.aba.ativa {
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--cor-roxa), var(--cor-roxa-clara));
+  box-shadow: 0 0 18px rgba(139, 61, 255, 0.35);
+}
+
+/* ============================= */
+/* CONTEÚDO DAS ABAS */
+/* ============================= */
+
+.portfolio__conteudo {
+  display: none;
+}
+
+.portfolio__conteudo.ativo {
+  display: block;
+}
+
+/* ============================= */
+/* GRID DOS PROJETOS */
+/* ============================= */
+
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+/* ============================= */
+/* CARD DE PROJETO */
+/* ============================= */
+
+.projeto-card {
+  overflow: hidden;
+
+  background: rgba(18, 11, 32, 0.75);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-grande);
+
+  box-shadow: 0 0 30px rgba(139, 61, 255, 0.08);
+}
+
+.projeto-card__imagem {
+  height: 190px;
+  overflow: hidden;
+
+  background: var(--cor-card-clara);
+  border-bottom: 1px solid rgba(178, 107, 255, 0.12);
+}
+
+.projeto-card__imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projeto-card__conteudo {
+  padding: 22px;
+}
+
+.projeto-card__conteudo h3 {
+  margin-bottom: 10px;
+
+  color: var(--cor-texto);
+  font-size: 1.25rem;
+}
+
+.projeto-card__conteudo p {
+  color: var(--cor-texto-suave);
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+/* ============================= */
+/* TECNOLOGIAS DO CARD */
+/* ============================= */
+
+.projeto-card__tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-bottom: 18px;
+}
+
+.projeto-card__tecnologias span {
+  padding: 6px 10px;
+
+  color: var(--cor-roxa-clara);
+  background: rgba(139, 61, 255, 0.12);
+  border: 1px solid rgba(178, 107, 255, 0.18);
+  border-radius: 999px;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+/* ============================= */
+/* BOTÕES DO CARD */
+/* ============================= */
+
+.projeto-card__botoes {
+  display: flex;
+  gap: 10px;
+}
+
+.projeto-card__botoes a {
+  flex: 1;
+  min-height: 38px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: var(--raio-pequeno);
+
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.projeto-card__botoes a:first-child {
+  color: #ffffff;
+  background: var(--cor-roxa);
+}
+
+.projeto-card__botoes a:last-child {
+  color: var(--cor-texto);
+  border: 1px solid var(--cor-borda);
+}
+
+/* ============================= */
+/* CERTIFICADOS */
+/* ============================= */
+
+.certificados-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.certificado-card {
+  overflow: hidden;
+
+  background: rgba(18, 11, 32, 0.75);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-grande);
+}
+
+.certificado-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+
+  border-bottom: 1px solid rgba(178, 107, 255, 0.12);
+}
+
+.certificado-card__conteudo {
+  padding: 18px;
+}
+
+.certificado-card__conteudo h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.certificado-card__conteudo p {
+  color: var(--cor-texto-suave);
+  font-size: 0.9rem;
+}
+
+/* ============================= */
+/* STACK */
+/* ============================= */
+
+.stack-blocos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.stack-bloco {
+  padding: 24px;
+
+  background: rgba(18, 11, 32, 0.75);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-grande);
+
+  box-shadow: 0 0 30px rgba(139, 61, 255, 0.08);
+}
+
+.stack-bloco h3 {
+  margin-bottom: 18px;
+  font-size: 1.2rem;
+}
+
+.stack-itens {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.stack-item {
+  min-height: 96px;
+  aspect-ratio: 1;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(178, 107, 255, 0.12);
+  border-radius: var(--raio-medio);
+}
+
+.stack-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.stack-item span {
+  display: none;
+}
