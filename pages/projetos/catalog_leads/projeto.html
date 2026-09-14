@@ -6,15 +6,15 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Wallace Monsores | Desenvolvedor Backend Júnior</title>
+    <title>Projeto - Catalog Leads</title>
 
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/hero.css">
-    <link rel="stylesheet" href="css/sobre.css">
-    <link rel="stylesheet" href="css/portfolio.css">
-    <link rel="stylesheet" href="css/contato.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/header.css">
+    <link rel="stylesheet" href="../../../css/hero.css">
+    <link rel="stylesheet" href="../../../css/sobre.css">
+    <link rel="stylesheet" href="../../../css/portfolio.css">
+    <link rel="stylesheet" href="../../../css/contato.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
     <link rel="stylesheet" href="css/responsivo.css">
 </head>
 
@@ -24,14 +24,11 @@
         <div class="container cabecalho__conteudo">
 
             <a href="#" class="logo">
-                Wallace Monsores<span></span>
+                Wallace <span></span>
             </a>
 
             <nav class="menu" id="menu">
-                <a href="#inicio">Início</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#portfolio">Portfólio</a>
-                <a href="#contato">Contato</a>
+                <a href="/index.html#portifolio">Portfólio</a>
             </nav>
 
             <button class="botao-menu" id="botao-menu" aria-label="Abrir menu" type="button">
@@ -48,52 +45,18 @@
 
                 <div class="hero__texto">
 
-                    <h1>Wallace<span> Monsores</span></h1>
+                    <h1>Nome do Projeto</h1>
 
                     <h2>
-                        Desenvolvedor
-                        <strong>backend</strong> 
+                        Sub
+                        <strong>Titulo</strong> 
                     </h2>
 
                     <p class="hero__descricao">
-                        Desenvolvedor Backend Júnior com foco em APIs REST utilizando TypeScript, Node.js, NestJS e PostgreSQL, aplicando arquitetura modular, segurança e boas práticas no desenvolvimento de aplicações.
+                        Resumo do projeto
                     </p>
 
-                    <div class="hero__botoes">
-                        <a href="assets/curriculo/curriculo-wallace.pdf" class="botao botao--principal" download>
-                            Baixar currículo
-                        </a>
-
-                        <a href="projetos.html" class="botao botao--secundario">
-                            Ver projetos
-                        </a>
-
-                        <a href="#" class="botao botao--secundario">
-                            LinkedIn
-                        </a>
-                    </div>
                 </div>
-
-                <div class="hero__imagem">
-                    <div class="card-codigo">
-                        <pre>
-                            const dev = {
-  nome: "Wallace",
-  foco: "Backend",
-  skills: [
-    "Nest.Js",
-    "React",
-    "JavaScript",
-    "SQL",
-    "Kotlin"
-  ]
-};
-                         </pre>
-                    </div>
-
-                    <img src="assets/img/perfil.png" alt="">
-                </div>
-
             </div>
         </section>
 
@@ -199,6 +162,7 @@
 
                                 <div class="projeto-card__tecnologias">
                                     <span>React</span>
+                                    <span>Vite</span>
                                     <span>TypeScript</span>
                                     <span>NestJS</span>
                                     <span>Prisma</span>
@@ -206,36 +170,41 @@
                                     <span>Supabase </span>
                                 </div>
 
-                                 <div class="projeto-card__botoes">
-                                    <a href="https://superbrilhorj.com.br/" target="_blank">Ver projeto</a>
+                                <div class="projeto-card__botoes" id="projeto-checklist">
+                                    <button onclick="verProjeto('projeto-checklist')">Ver projeto</button>
                                     <a href="#" target="_blank">GitHub</a>
                                 </div>
                             </div>
+
+                            <!--Catalogo de Produtos-->
                             
                         </article>
 
                         <!--Catalogo de Produtos-->
                         <article class="projeto-card">
                             <div class="projeto-card__imagem">
-                                <img src="assets/img/projetos/catalog/Card.png" alt="Catalogo de Produtos">
+                                <img src="assets/img/projetos/checklist.png" alt="Catalogo de Produtos">
                             </div>
 
                             <div class="projeto-card__conteudo">
-                                <h3>Catalog Leads</h3>
+                                <h3>Catalogo de Produtos</h3>
 
                                 <p>
                                     ....
                                 </p>
 
                                 <div class="projeto-card__tecnologias">
-                                    <span>React</span>
-                                    <span>Node.Js</span>
-                                    <span>Express</span>
-                                    <span>MySQL</span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
                                 </div>
 
                                 <div class="projeto-card__botoes">
-                                    <a href="https://superbrilhorj.com.br/" target="_blank">Ver projeto</a>
+                                    <a href="#" target="_blank">Ver projeto</a>
                                     <a href="#" target="_blank">GitHub</a>
                                 </div>
                             </div>
@@ -312,6 +281,7 @@
                                 
                             </div>
                         </article>
+
                     </div>
                 </div>
 
